@@ -86,11 +86,45 @@ nav-item>active {
   Font-size: 0.9em;
   background-color: #0c3759;
 }
+#MenuVertical {
+background-color: #156391;
+margin:0;
 
-#menuVertical {
+  float:left;
+}
+.BoldSearch{
+  color:black;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.VerticalTitle{
+    font-size: 0.9em;
+}
+#v-pills-home-tab:active{
+    background-color: #1d8ec8;
+}
+#v-pills-home-tab:hover{
+    background-color: #1d8ec8;
+}
+#v-pills-profile-tab:hover{
   background-color: #1d8ec8;
 }
+#v-pills-profile-tab:active{
+  background-color: #1d8ec8;
+}
+#v-pills-messages-tab:hover{
+    background-color: #1d8ec8;
+}
+#v-pills-messages-tab:active{
+    background-color: #1d8ec8;
+}
+#BlocDeroulant1 {
+  background-color: #1d8ec8;
+  margin:0;
+}
+#v-pills-home{font-size: 0.7em;
+color:#FFFFFF}
 
-.ListTitle {
-  font-size: 1em;
+select{
+  width:5vw;
 }
