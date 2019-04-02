@@ -101,31 +101,27 @@
 }
 
 #Menu1 {
-  Font-size: 0.8em;
+  Font-size: 0.7em;
 }
 
-#menu1 {
-  color: #FFFFFF;
-}
+
 
 .nav-item .nav-link {
   padding: 0;
 }
 
 .nav-item:hover {
-  background-color: red;
+  background-color: #303030;
 }
 
-nav-item>active {
-  background-color: #0c3759;
-}
+
 
 .MenuTire {
   background: #909090;
 }
 
-#PneuMotoTitle>nav-link a:hover {
-  background-color: #5e840c;
+#EmptyBlock>nav-link a:hover {
+  background-color: #D3D3D3;
 }
 
 #PneuAutoTitle {
@@ -142,9 +138,11 @@ nav-item>active {
 }
 
 #MontageTitle {
-  background-color: ##156391;
+  background-color: #156391;
 }
-
+#EmptyBlock {
+  background-color: #156391;
+}
 #Menu2 {
   Font-size: 0.8em;
   background-color: #0c3759;
