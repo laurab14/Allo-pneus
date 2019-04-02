@@ -1,14 +1,21 @@
 /* Dropdown Formulaire */
 .DropButton1 {
-  background-color: :#696969;
+  background-color: :##424242;
   color: white;
   padding: 5px;
   font-size: 1em;
   border: none;
 }
 
-.DropButton1 a:hover {
-  background-color: :orange;
+#EspacePro {
+  color: white;
+  padding: 5px;
+  font-size: 1em;
+  border: none;
+}
+
+.DropButton:hover {
+  background-color: #ff6600;
   color: white;
   padding: 5px;
   font-size: 1em;
@@ -55,8 +62,8 @@
 }
 
 .DropDown:hover .DropButton .DropButton1 {
-  background-color: orange;
-  border: 5px solid orange;
+  background-color: #ff6600;
+  border: 5px solid #ff6600;
 }
 
 #FB {
@@ -68,10 +75,45 @@
   font-size: 0.5em;
 }
 
+#CountButton {
+  background: #ff6600;
+  padding: 12px;
+  font-size: 0.8em;
+  border-radius: 0.5px;
+}
+
 /* Bloc Header*/
+#HomeBanner {
+  width: 30vw;
+}
+
+#ContactBanner {
+  width: 12vw;
+}
+
+#Panier1 {
+  font-size: 0.8em
+}
+
+#Panier2 {
+  font-size: 0.7em;
+  color: #ff6600;
+}
+
 #Menu1 {
-  Font-size: 1em;
+  Font-size: 0.8em;
+}
+
+#menu1 {
   color: #FFFFFF;
+}
+
+.nav-item .nav-link {
+  padding: 0;
+}
+
+.nav-item:hover {
+  background-color: red;
 }
 
 nav-item>active {
@@ -82,49 +124,82 @@ nav-item>active {
   background: #909090;
 }
 
+#PneuMotoTitle>nav-link a:hover {
+  background-color: #5e840c;
+}
+
+#PneuAutoTitle {
+  background-color: #0c3759;
+  color: #FFFFFF;
+}
+
+#PromoTitle {
+  background-color: #f10505;
+}
+
+#HiverTitle {
+  background-color: #449fba;
+}
+
+#MontageTitle {
+  background-color: ##156391;
+}
+
 #Menu2 {
-  Font-size: 0.9em;
+  Font-size: 0.8em;
   background-color: #0c3759;
 }
-#MenuVertical {
-background-color: #156391;
-margin:0;
 
-  float:left;
+#MenuVertical {
+  background-color: #156391;
+  margin: 0;
+  float: left;
 }
-.BoldSearch{
-  color:black;
+
+.BoldSearch {
+  color: black;
   font-weight: bold;
   font-size: 0.9em;
 }
-.VerticalTitle{
-    font-size: 0.9em;
+
+.VerticalTitle {
+  font-size: 0.9em;
 }
-#v-pills-home-tab:active{
-    background-color: #1d8ec8;
-}
-#v-pills-home-tab:hover{
-    background-color: #1d8ec8;
-}
-#v-pills-profile-tab:hover{
+
+#v-pills-home-tab:active {
   background-color: #1d8ec8;
 }
-#v-pills-profile-tab:active{
+
+#v-pills-home-tab:hover {
   background-color: #1d8ec8;
 }
-#v-pills-messages-tab:hover{
-    background-color: #1d8ec8;
+
+#v-pills-tab a:hover {
+  background-color: #1d8ec8;
 }
-#v-pills-messages-tab:active{
-    background-color: #1d8ec8;
+
+#v-pills-profile-tab:active {
+  background-color: #1d8ec8;
 }
+
+#v-pills-messages-tab:hover {
+  background-color: #1d8ec8;
+}
+
+#v-pills-messages-tab:active {
+  background-color: #1d8ec8;
+}
+
 #BlocDeroulant1 {
   background-color: #1d8ec8;
-  margin:0;
+  margin: 0;
 }
-#v-pills-home{font-size: 0.7em;
-color:#FFFFFF}
 
-select{
-  width:5vw;
+#v-pills-home {
+  font-size: 0.7em;
+  color: #FFFFFF
+}
+
+select {
+  width: 5vw;
 }
