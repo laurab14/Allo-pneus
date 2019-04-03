@@ -1,0 +1,183 @@
+#carouselExampleIndicators #target1 {
+  background-image: url("Pneu-Allopneus_premium_Promo-pneu-auto-pas-cher-slidinette.jpg");
+  background-repeat: no-repeat;
+  display: block;
+}
+
+#carouselExampleIndicators #target2 {
+  background-image: url("Pneu_pirelli_pneu_auto_pas_cher_montage_domicileslidinette.jpg");
+  background-repeat: no-repeat;
+  display: block;
+}
+
+#carouselExampleIndicators #target3 {
+  background-image: url("Pneu_hankook_pneu_auto_nouveau_pas_cher_slidinette.jpg");
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.carousel-indicators>li {
+  height: 3.1vw;
+  width: 9.3vW;
+}
+
+.modal-title {
+  color: black;
+}
+
+.modal-body {
+  font-size: 0.9vw;
+}
+
+#Modalink {
+  color: black;
+  text-decoration: underline;
+}
+
+.carousel-caption {
+  top: 35vw;
+  left: 70vw;
+  font-size: 1vw;
+}
+
+.modal-body2 {
+  margin-top: 2vw;
+  font-size: 0.9vw
+}
+
+.OrangeColor {
+  color: #ff6600;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8vw;
+}
+
+.imgbody1 {
+  width: 6vw;
+}
+
+.Btnwen {
+  width: 3vw;
+  background-color: #ff6600;
+  font-family: 'Roboto', sans-serif;
+}
+
+.BgBlack {
+  background-color: #343434;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.chevron {
+  width: 1vw;
+}
+
+.TitleOrange {
+  background-color: #ff6600;
+  color: white;
+  text-align: center;
+  height: 3.2vh;
+  font-size: 0.8vw;
+}
+
+.BlackText {
+  font-size: 1vw;
+}
+
+.columns {
+  columns: 2
+}
+
+.blockLeft {
+  text-align: center;
+}
+
+#target4 {
+  background-size: 10px;
+  background-color: #ff6600;
+  border-radius: 50%;
+  height: 13px;
+  width: 13px;
+  border: solid 2px grey;
+}
+
+.ZoneText {
+  margin-top: 2vh;
+  height: 65vh;
+  width: 50vw;
+  background-color: white;
+}
+
+.Row1 {
+  margin: auto;
+  height: 70vh;
+  width: 75vw;
+}
+
+.Img0 {
+  text-align: center;
+  height: 10vh;
+  width: 14vw;
+}
+
+.Img1 {
+  text-align: center;
+  height: 4vh;
+  width: 6vw;
+}
+
+.Img12 {
+  text-align: left;
+}
+
+.Img13 {
+  margin-right: 0;
+}
+
+.LinkNav, .Row1 {
+  background-color: #f5f5f5;
+  color: black;
+  font-size: bold;
+}
+
+.LinkNav:hover {
+  background-color: white;
+}
+
+.Img5 {
+  height: 25px;
+  width: 25px;
+}
+
+.nav1 {
+  width: 20vw;
+  padding-top: 10vw;
+  border: solid 1px #f5f5f5;
+}
+
+.GaucheGris {
+  background-color: #f5f5f5;
+}
+
+.Bandeau1, .Bandeau2 {
+  width: 75vw;
+  margin: auto;
+}
+
+.ColPneu11, .Col3Pneu11 {
+  height: 60vh;
+  border-color: grey;
+  border: 2px;
+}
+
+.Row3Pneu11 {
+  height: 20vh;
+  border: solid 2px #f5f5f5;
+}
+
+.ColPneu11 {
+  padding-top: 20%;
+  width: 20;
+}
+
+.Row3Pneu11 {
+  padding-left: 40%;
