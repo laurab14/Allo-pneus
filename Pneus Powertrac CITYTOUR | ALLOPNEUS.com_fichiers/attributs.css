@@ -1,0 +1,523 @@
+.attributs {
+  float: left;
+  height: 36px;
+}
+.attributs ul li {
+  width: 30px;
+  height: 30px;
+  display: block;
+  float: left;
+  position: relative;
+  margin-left: 3px;
+  background-color: #ffffff;
+}
+.attributs ul li span {
+  display: none;
+  position: absolute;
+  width: 225px;
+  min-height: 25px;
+  padding: 5px 10px 5px 7px;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  overflow: hidden;
+  border-radius: 0 3px 3px 3px;
+  top: 30px;
+  left: 0;
+  z-index: 5;
+  font-size: 12px;
+}
+.attributs ul li:first-child {
+  margin-left: 0;
+}
+.attributs ul li:hover span {
+  display: block;
+}
+.listing_produit_info .attributs {
+  height: auto;
+}
+.listing_produit_info .attributs ul li {
+  margin: 0 3px 3px 0;
+}
+.listing_produit_info .attributs ul li span {
+  left: 30px;
+}
+.listing_produit_info .attributs ul li:first-child {
+  margin: 0 3px 3px 0;
+}
+.infos_fiche_produit .attributs {
+  position: absolute;
+  top: 13px;
+  left: -318px;
+}
+.infos_fiche_produit .attributs ul li {
+  margin-bottom: 3px;
+  margin-left: 0;
+  float: none;
+  cursor: pointer;
+}
+.infos_fiche_produit .attributs ul li span {
+  top: 0;
+  left: 30px;
+}
+.infos_fiche_produit .attributs ul li:hover {
+  margin-top: 0;
+}
+.infos_fiche_produit .attributs.mea {
+  top: 12px;
+}
+.attributs_popin {
+  padding-top: 10px;
+}
+.attributs_popin ul li {
+  font-size: 11px;
+  line-height: 13px;
+  list-style-type: none;
+  min-height: 32px;
+  padding: 0 0 5px 35px;
+  position: relative;
+}
+.attributs_popin ul li span {
+  width: 30px;
+  height: 30px;
+  display: block;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  text-indent: -3000px;
+  top: 0;
+}
+.attributs_popin ul li span:first-child {
+  margin-left: 0;
+}
+.attributs_popin ul li span:before {
+  opacity: 1;
+}
+.left ul {
+  padding-left: 0 !important;
+}
+.classification {
+  border: 1px solid #bababa;
+  padding-top: 1px;
+  width: 127px;
+  position: relative;
+  top: 3px;
+  clear: left;
+}
+.classification a {
+  color: slategray;
+  font-weight: bold;
+  font-size: 10px;
+  text-decoration: none;
+}
+[class^="attribut_"],
+[class*=" attribut_"] {
+  background-image: none;
+  background-color: #ffffff;
+}
+[class^="attribut_"]:before,
+[class*=" attribut_"]:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fe7b03;
+  box-sizing: border-box;
+}
+.attribut_video:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/play_video.svg');
+  border-color: #444444;
+}
+.attribut_confort:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/confort.svg');
+}
+.attribut_runflat:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/runflat.svg');
+}
+.attribut_tc4_4_saisons:before {
+  border-color: #3298cb;
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/4_saisons.svg');
+}
+.attribut_tc4_4x4:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/4x4.svg');
+}
+.attribut_tc4_asymetrique:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/asymetrique.svg');
+}
+.attribut_tc4_asymetrique_directionnel:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/asymetrique_directionnel.svg');
+}
+.attribut_tc4_berline_monospace:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/berline_monospace.svg');
+}
+.attribut_tc4_camping_car:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/camping_car.svg');
+}
+.attribut_tc4_citadine:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/citadine.svg');
+}
+.attribut_tc4_cloutable:before {
+  border-color: #3298cb;
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/cloutable.svg');
+}
+.attribut_tc4_cloute:before {
+  border-color: #3298cb;
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/cloute.svg');
+}
+.attribut_tc4_collection:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/collection.svg');
+}
+.attribut_tc4_competition:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/competition.svg');
+}
+.attribut_tc4_crossclimate:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/crossclimate.svg');
+}
+.attribut_tc4_directionnel:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/directionnel.svg');
+}
+.attribut_tc4_eco:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/eco.svg');
+}
+.attribut_tc4_longevite:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/longevite.svg');
+}
+.attribut_tc4_mud_snow:before {
+  border-color: #3298cb;
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/mud_snow.svg');
+}
+.attribut_tc4_nordique:before {
+  border-color: #3298cb;
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/nordique.svg');
+}
+.attribut_tc4_nouveaute:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/nouveaute.svg');
+}
+.attribut_tc4_performance:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/performance.svg');
+}
+.attribut_tc4_sport:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/sport.svg');
+}
+.attribut_tc4_sportive:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/sportive.svg');
+}
+.attribut_tc4_suv:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/suv.svg');
+}
+.attribut_tc4_symetrique:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/symetrique.svg');
+}
+.attribut_tc4_utilitaire_leger:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/utilitaire_leger.svg');
+}
+.attribut_tc4_utilitaire_lourd:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/utilitaire_lourd.svg');
+}
+.attribut_tc4_vehicule_electrique:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/vehicule_electrique.svg');
+}
+.attribut_tc4_vert:before {
+  border-color: #008200;
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/tc4/vert.svg');
+}
+.attribut_moto_4_saisons:before {
+  border-color: #3298cb;
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/4_saisons.svg');
+}
+.attribut_moto_ancienne_classique:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/ancienne_classique.svg');
+}
+.attribut_moto_bi_gomme:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/bi_gomme.svg');
+}
+.attribut_moto_boue:before {
+  border: none;
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/boue.svg');
+}
+.attribut_moto_cailloux:before {
+  border: none;
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/cailloux.svg');
+}
+.attribut_moto_fim:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/fim.svg');
+}
+.attribut_moto_flanc_blanc:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/flanc_blanc.svg');
+}
+.attribut_moto_gt:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/gt.svg');
+}
+.attribut_moto_harley_davidson:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/harley_davidson.svg');
+}
+.attribut_moto_herbe:before {
+  border: none;
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/herbe.svg');
+}
+.attribut_moto_liseret_blanc:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/liseret_blanc.svg');
+}
+.attribut_moto_moyen_flanc_blanc:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/moyen_flanc_blanc.svg');
+}
+.attribut_moto_nhs:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/nhs.svg');
+}
+.attribut_moto_nouveaute:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/nouveaute.svg');
+}
+.attribut_moto_petite_moyenne_cylindree:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/petite_moyenne_cylindree.svg');
+}
+.attribut_moto_pluie:before {
+  border-color: #3298cb;
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/pluie.svg');
+}
+.attribut_moto_ratio_50_50:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/ratio_50_50.svg');
+}
+.attribut_moto_ratio_80_20:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/ratio_80_20.svg');
+}
+.attribut_moto_ratio_90_10:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/ratio_90_10.svg');
+}
+.attribut_moto_roadster:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/roadster.svg');
+}
+.attribut_moto_sable:before {
+  border: none;
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/sable.svg');
+}
+.attribut_moto_sol_dur:before {
+  border: none;
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/sol_dur.svg');
+}
+.attribut_moto_sol_sec:before {
+  border: none;
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/sol_sec.svg');
+}
+.attribut_moto_sol_stabilise:before {
+  border: none;
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/sol_stabilise.svg');
+}
+.attribut_moto_sportive:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/sportive.svg');
+}
+.attribut_moto_trail_mixte:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/trail_mixte.svg');
+}
+.attribut_moto_trail_routier:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/trail_routier.svg');
+}
+.attribut_moto_tri_gomme:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/tri_gomme.svg');
+}
+.attribut_moto_vert:before {
+  border-color: #008200;
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/moto/vert.svg');
+}
+.attribut_pl_3_pmsf:before {
+  border-color: #3298cb;
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/truck/3_pmsf.svg');
+}
+.attribut_pl_directionnel:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/truck/directionnel.svg');
+}
+.attribut_pl_eco:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/truck/eco.svg');
+}
+.attribut_pl_longevite:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/truck/longevite.svg');
+}
+.attribut_pl_michelin_x_multi:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/truck/michelin_x_multi.svg');
+  border-color: #e7e7e7;
+}
+.attribut_pl_michelin_x_works:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/truck/michelin_x_works.svg');
+  border-color: #e7e7e7;
+}
+.attribut_pl_monovie:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/truck/monovie.svg');
+}
+.attribut_pl_mud_snow:before {
+  border-color: #3298cb;
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/truck/mud_snow.svg');
+}
+.attribut_pl_nouveaute:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/truck/nouveaute.svg');
+}
+.attribut_pl_ratio_10_90:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/truck/ratio_10_90.svg');
+}
+.attribut_pl_ratio_50_50:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/truck/ratio_50_50.svg');
+}
+.attribut_pl_ratio_80_20:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/truck/ratio_80_20.svg');
+}
+.attribut_pl_rechapable:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/truck/rechapable.svg');
+}
+.attribut_pl_retaillable:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/truck/retaillable.svg');
+}
+.attribut_pl_symetrique:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/truck/symetrique.svg');
+}
+.attribut_pl_toutes_positions:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/truck/toutes_positions.svg');
+}
+.attribut_pl_vert:before {
+  border-color: #008200;
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/truck/vert.svg');
+}
+.attribut_agri_auto_nettoyage:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/autonettoyage.svg');
+}
+.attribut_agri_bulldozer:before,
+.attribut_agri_chargeur:before,
+.attribut_agri_compacteur:before,
+.attribut_agri_decapeuse:before,
+.attribut_agri_dumper:before,
+.attribut_agri_excavateur:before,
+.attribut_agri_manutention:before,
+.attribut_agri_mines:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/chargeur.svg');
+}
+.attribut_agri_champs:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/champs.svg');
+}
+.attribut_agri_charge:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/charge.svg');
+}
+.attribut_agri_chariot_elevateur:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/chariot_elevateur.svg');
+}
+.attribut_agri_confort_conduite:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/confort_conduite.svg');
+}
+.attribut_agri_eco:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/eco.svg');
+}
+.attribut_agri_forestier:before,
+.attribut_agri_debusqueuse:before,
+.attribut_agri_abatteuse:before,
+.attribut_agri_porteur:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/forestier.svg');
+}
+.attribut_agri_gazon:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/gazon.svg');
+}
+.attribut_agri_gravier:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/gravier.svg');
+}
+.attribut_agri_grue:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/grue.svg');
+}
+.attribut_agri_hiver:before {
+  border-color: #3298cb;
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/hiver.svg');
+}
+.attribut_agri_irrigation:before,
+.attribut_agri_recolte:before,
+.attribut_agri_tracteur:before,
+.attribut_agri_traitement:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/tracteur.svg');
+}
+.attribut_agri_longevite:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/longevite.svg');
+}
+.attribut_agri_micro_tracteur:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/micro_tracteur.svg');
+}
+.attribut_agri_nouveaute:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/nouveaute.svg');
+}
+.attribut_agri_pelle_pneu:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/tractopelle.svg');
+}
+.attribut_agri_perforation:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/perforation.svg');
+}
+.attribut_agri_polyvalent:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/polyvalent.svg');
+}
+.attribut_agri_productivite:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/productivite.svg');
+}
+.attribut_agri_profondeur_sculpture:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/profondeur_sculpture.svg');
+}
+.attribut_agri_remorque_citerne:before,
+.attribut_agri_conteneur:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/remorque_citerne.svg');
+}
+.attribut_agri_respect_sol:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/respect_sol.svg');
+}
+.attribut_agri_robustesse:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/robustesse.svg');
+}
+.attribut_agri_roche:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/roche.svg');
+}
+.attribut_agri_roue_complete:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/roue_complete.svg');
+}
+.attribut_agri_route:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/route.svg');
+}
+.attribut_agri_sable:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/sable.svg');
+}
+.attribut_agri_skidsteer_bobcat:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/chariot_elevateur.svg');
+}
+.attribut_agri_sol_dur:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/sol_dur.svg');
+}
+.attribut_agri_sol_meuble:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/sol_meuble.svg');
+}
+.attribut_agri_stabilite:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/stabilite.svg');
+}
+.attribut_agri_telescopique:before,
+.attribut_agri_tractopelle:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/tractopelle.svg');
+}
+.attribut_agri_tenue_route:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/tenue_route.svg');
+}
+.attribut_agri_traction:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/farm/traction.svg');
+}
+.attribut_accessoire_4x4:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/accessoires/4x4.svg');
+}
+.attribut_accessoire_7mm:before {
+  border-color: #3298cb;
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/accessoires/7mm.svg');
+}
+.attribut_accessoire_montage:before {
+  border-color: #3298cb;
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/accessoires/montage_facile.svg');
+}
+.attribut_accessoire_nouveaute:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/accessoires/nouveaute.svg');
+}
+.attribut_accessoire_protection:before {
+  border-color: #3298cb;
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/accessoires/protection_jante.svg');
+}
+.attribut_accessoire_suv:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/accessoires/suv.svg');
+}
+.attribut_accessoire_utilitaires:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/accessoires/utilitaires.svg');
+}
+.attribut_accessoire_voitures:before {
+  background-image: url('../../bundles/allopneusdesktop/images/attributes/accessoires/voitures.svg');
+}

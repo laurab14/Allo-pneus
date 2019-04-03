@@ -1,0 +1,565 @@
+.footer p.rgpd {
+  font-size: 10px;
+}
+.footer p.rgpd a {
+  color: #fff;
+  font-size: 10px;
+  text-decoration: underline;
+}
+.footer p.rgpd a:hover {
+  color: #fff;
+}
+#prefooter {
+  margin: 10px auto 40px auto;
+  padding: 0;
+  width: 980px;
+  background: #fff;
+  border-radius: 0 0 2px 2px;
+  position: relative;
+  height: 60px;
+  overflow: hidden;
+}
+#prefooter #conteneur_caroussel {
+  position: absolute;
+  padding: 0 50px;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: 60px;
+  white-space: nowrap;
+}
+#prefooter #conteneur_caroussel li {
+  float: left;
+  width: 176px;
+  height: 60px;
+  text-align: center;
+  padding: 0;
+}
+#prefooter #conteneur_caroussel li a {
+  text-align: left;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-left: 80px;
+  padding-top: 15px;
+  display: block;
+  height: 45px;
+}
+#prefooter #conteneur_caroussel li a span {
+  display: block;
+  color: #5d5d5d;
+}
+#prefooter #conteneur_caroussel li a span.col {
+  color: #ff6600;
+}
+#prefooter #conteneur_caroussel li a.prefooter_gratos {
+  background: url(/bundles/allopneusheaderfooter/img/desktop/refonte_homes/prefooter_gratos.png) left top no-repeat;
+}
+#prefooter #conteneur_caroussel li a.prefooter_montage {
+  background: url(/bundles/allopneusheaderfooter/img/desktop/refonte_homes/prefooter_montage.png) left top no-repeat;
+}
+#prefooter #conteneur_caroussel li a.prefooter_appel {
+  background: url(/bundles/allopneusheaderfooter/img/desktop/refonte_homes/prefooter_appel.png) left top no-repeat;
+}
+#prefooter #conteneur_caroussel li a.prefooter_prix {
+  background: url(/bundles/allopneusheaderfooter/img/desktop/refonte_homes/prefooter_prix.png) left top no-repeat;
+}
+#prefooter #conteneur_caroussel li a.prefooter_secure {
+  background: url(/bundles/allopneusheaderfooter/img/desktop/refonte_homes/prefooter_secure.png) left top no-repeat;
+}
+#prefooter #conteneur_caroussel li a.prefooter_cb {
+  background: url(/bundles/allopneusheaderfooter/img/desktop/refonte_homes/prefooter_cb.png) left top no-repeat;
+}
+#prefooter #conteneur_caroussel li a.prefooter_express {
+  background: url(/bundles/allopneusheaderfooter/img/desktop/refonte_homes/prefooter_express.png) left top no-repeat;
+}
+#prefooter #conteneur_caroussel li a.prefooter_conseil {
+  background: url(/bundles/allopneusheaderfooter/img/desktop/refonte_homes/prefooter_conseil.png) left top no-repeat;
+}
+#prefooter #conteneur_caroussel li a.prefooter_vert {
+  background: url(/bundles/allopneusheaderfooter/img/desktop/refonte_homes/prefooter_vert.png) left top no-repeat;
+}
+#prefooter #caroussel_left {
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 60px;
+  background: #fff url(/bundles/allopneusheaderfooter/img/desktop/refonte_homes/footer_left.jpg) left top no-repeat;
+}
+#prefooter #caroussel_right {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 60px;
+  background: #fff url(/bundles/allopneusheaderfooter/img/desktop/refonte_homes/footer_right.jpg) left top no-repeat;
+}
+.footer {
+  width: 100%;
+  background: #f1f1f1;
+  min-height: 0;
+  color: #625f5f;
+  font-size: 12px;
+}
+.footer > div {
+  width: 980px;
+  margin: 0 auto;
+}
+.footer a:not(.btn_default) {
+  color: #625f5f;
+  text-decoration: none;
+}
+.footer a:not(.btn_default):hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
+.footer#footer_haut {
+  border-top: 1px #d6d6d6 solid;
+  background: #f1f1f1 url(/bundles/allopneusheaderfooter/img/desktop/refonte_homes/fond_footer_black.jpg) left bottom repeat-x;
+}
+.footer#footer_haut #footer_cats {
+  position: relative;
+}
+.footer#footer_haut #footer_cats > div {
+  width: 285px;
+  float: left;
+  padding: 20px;
+  margin-top: 20px;
+  color: #5d5d5d;
+  min-height: 170px;
+}
+.footer#footer_haut #footer_cats > div h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff6600;
+  margin: 0 0 15px 0;
+}
+.footer#footer_haut #footer_cats > div > ul {
+  list-style-type: disc;
+  color: #ff6600;
+  padding-left: 15px;
+  margin: 0 0 12px 0;
+}
+.footer#footer_haut #footer_cats > div.footer_station {
+  background: url("/bundles/allopneusheaderfooter/img/desktop/refonte_homes/footer_station_new.png") right bottom no-repeat;
+}
+.footer#footer_haut #footer_cats > div.footer_station p {
+  margin-bottom: 12px;
+}
+.footer#footer_haut #footer_cats > div.black {
+  position: absolute;
+  bottom: 30px;
+  left: 330px;
+  margin: 0;
+}
+.footer#footer_haut #footer_cats > div.black h3 {
+  color: #ff6600;
+}
+.footer#footer_haut #footer_cats > div.black.last {
+  left: 655px;
+}
+.footer#footer_haut #footer_cats > div.black ul {
+  color: #fff;
+}
+.footer#footer_haut #footer_cats > div.spaceDiv {
+  float: none;
+  min-height: 0;
+  padding: 0;
+  height: 0;
+}
+.footer#footer_haut #footer_cats > div.about {
+  position: relative;
+  width: 290px;
+  min-height: 370px;
+  padding: 80px 20px 15px 20px;
+  margin: 0;
+  color: #a2a2a2;
+  background: #fff url("/bundles/allopneusheaderfooter/img/desktop/refonte_homes/logo_15ans_footer.png") center 10px no-repeat;
+}
+.footer#footer_haut #footer_cats > div.about div h2 {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ff6600;
+  margin-top: 5px;
+}
+.footer#footer_haut #footer_cats > div.about div #social {
+  padding-left: 0;
+  padding-top: 15px;
+  list-style: none;
+}
+.footer#footer_haut #footer_cats > div.about div #social li {
+  float: left;
+  margin-left: 5px;
+}
+.footer#footer_haut #footer_cats > div.about div #social li#chewing {
+  margin-left: 0;
+}
+.footer#footer_haut #footer_cats > div.about div #rss_blog {
+  position: relative;
+  overflow: hidden;
+  width: 290px;
+  height: 100px;
+}
+.footer#footer_haut #footer_cats > div.about div #rss_blog ul {
+  width: 1540px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.footer#footer_haut #footer_cats > div.about div #rss_blog ul li {
+  width: 290px;
+  height: 100px;
+  float: left;
+  position: relative;
+}
+.footer#footer_haut #footer_cats > div.about div #rss_blog ul li h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  color: #e95141;
+}
+.footer#footer_haut #footer_cats > div.about div #rss_blog ul li h3 a {
+  color: #e95141;
+}
+.footer#footer_haut #footer_cats > div.about div #rss_blog ul li p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  color: #5d5d5d;
+  position: absolute;
+  width: 290px;
+  top: 30px;
+  left: 0;
+}
+.footer#footer_haut #footer_cats > div.about div #rss_blog ul li > a {
+  color: #e95141;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-weight: bold;
+}
+.footer#footer_haut #footer_cats > div.about div #rss_blog .rss_gauche,
+.footer#footer_haut #footer_cats > div.about div #rss_blog .rss_droit {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  bottom: 0;
+  cursor: pointer;
+}
+.footer#footer_haut #footer_cats > div.about div #rss_blog .rss_gauche {
+  background: url("/bundles/allopneusheaderfooter/img/desktop/refonte_homes/rss_precedent.png") left top no-repeat;
+  left: 0;
+}
+.footer#footer_haut #footer_cats > div.about div #rss_blog .rss_droit {
+  background: url("/bundles/allopneusheaderfooter/img/desktop/refonte_homes/rss_suivant.png") left top no-repeat;
+  left: 25px;
+}
+.footer#footer_haut #footer_cats > div.about div.deco {
+  position: absolute;
+  width: 350px;
+  height: 10px;
+  left: -10px;
+  top: -10px;
+  background: url("/bundles/allopneusheaderfooter/img/desktop/refonte_homes/fond_foot_info.png") right center no-repeat;
+}
+.footer#footer_news {
+  background: #ff6600;
+  padding-top: 10px;
+}
+.footer#footer_news > div {
+  position: relative;
+  width: 980px;
+  min-height: 50px;
+  margin: 0 auto;
+  padding: 0;
+  color: #fff;
+  background: #ff6600 url("/bundles/allopneusheaderfooter/img/desktop/refonte_homes/news_input.png") 420px top no-repeat;
+}
+.footer#footer_news > div > span {
+  float: left;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 50px;
+  text-align: right;
+  width: 400px;
+  padding-right: 35px;
+}
+.footer#footer_news > div #news-result {
+  float: none;
+  display: block;
+  width: auto;
+  text-transform: none;
+  font-weight: normal;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  clear: both;
+}
+.footer#footer_news > div #news-result #result {
+  font-size: 13px;
+  margin: 0;
+  line-height: 17px;
+}
+.footer#footer_news > div #news-result.result-message {
+  margin-top: 10px;
+  padding: 0px 10px 10px;
+}
+.footer#footer_news > div #news-result.result-message.error {
+  background: #f1f1f1;
+  padding: 5px 10px;
+}
+.footer#footer_news > div #news-result.result-message.error #result {
+  color: red;
+}
+.footer#footer_news > div #newsForm {
+  height: 50px;
+  margin: 0;
+}
+.footer#footer_news > div #newsForm * {
+  box-sizing: border-box;
+}
+.footer#footer_news > div #input_newsletter {
+  background: #fff;
+  border: 1px #da4e16 solid;
+  border-radius: 2px;
+  color: #ff6600;
+  font-size: 16px;
+  height: 30px;
+  line-height: 30px;
+  margin: 10px 0 0 5px;
+  padding: 0 10px;
+  width: 285px;
+  font-style: italic;
+}
+.footer#footer_news > div #loader-indicator {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+.footer#footer_news > div .abo {
+  margin: 14px 0 0 40px;
+  padding: 0 15px;
+  border-radius: 2px;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 22px;
+  line-height: 22px;
+  border: none;
+  text-decoration: none;
+}
+.footer#footer_news > div .abo:hover {
+  background: #272727;
+  text-decoration: none;
+}
+.footer#footer_mid {
+  background: #d7d7d7;
+}
+.footer#footer_mid > div {
+  background: #d7d7d7;
+  width: 980px;
+  padding: 10px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer#footer_mid > div a {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+.footer#footer_mid > div a img {
+  display: block;
+}
+.footer ul.footer_links {
+  width: 980px;
+  min-height: 130px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  overflow: auto;
+}
+.footer ul.footer_links > li {
+  float: left;
+  width: 250px;
+  padding: 10px 5px 0 0;
+  margin: 0 0 10px 0;
+  vertical-align: top;
+}
+.footer ul.footer_links > li h2 {
+  color: #ff6600;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 0 5px 0;
+  margin: 0;
+  font-size: 12px;
+}
+.footer ul.footer_links > li h2 a {
+  color: #ff6600;
+}
+.footer ul.footer_links > li a:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
+.footer ul.footer_links > li ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.footer ul.footer_links > li:nth-of-type(2),
+.footer ul.footer_links > li:nth-of-type(3) {
+  width: 230px;
+}
+.footer ul.footer_links > li#footer_pay_secure li {
+  margin: 0 5px 5px 0;
+  display: inline-block;
+  width: 47px;
+  height: 26px;
+}
+.footer ul.footer_links > li#footer_pay_secure li a {
+  display: block;
+  width: 47px;
+  height: 26px;
+  background: url("/bundles/allopneusheaderfooter/img/desktop/footer_paiement_sprite.png") no-repeat;
+  overflow: hidden;
+  margin: 0;
+  text-indent: -3000px;
+}
+.footer ul.footer_links > li#footer_pay_secure li a#pay_secure {
+  height: 20px;
+  width: 116px;
+  text-indent: 0;
+  clear: both;
+  padding: 5px 0 0 20px;
+  background: url("/bundles/allopneusheaderfooter/img/desktop/footer_paiement_secure.png") left top no-repeat;
+  margin: 0 18px 0 0;
+}
+.footer ul.footer_links > li#footer_pay_secure li a#pay_1 {
+  background-position: 0 0;
+}
+.footer ul.footer_links > li#footer_pay_secure li a#pay_2 {
+  background-position: -47px 0;
+}
+.footer ul.footer_links > li#footer_pay_secure li a#pay_3 {
+  background-position: -94px 0;
+}
+.footer ul.footer_links > li#footer_pay_secure li a#pay_4 {
+  background-position: -141px 0;
+}
+.footer ul.footer_links > li#footer_pay_secure li a#pay_5 {
+  background-position: -188px 0;
+}
+.footer ul.footer_links > li#footer_pay_secure li a#pay_6 {
+  background-position: -235px 0;
+}
+.footer ul.footer_links > li#footer_pay_secure li a#pay_7 {
+  background-position: -282px 0;
+}
+.footer ul.footer_links > li#footer_pay_secure li a#pay_8 {
+  background-position: -329px 0;
+}
+.footer ul.footer_links > li#footer_pay_secure li a#pay_9 {
+  background-position: -376px 0;
+}
+.footer ul.footer_links > li#footer_pay_secure li a#pay_10 {
+  background-position: -423px 0;
+}
+.footer ul.footer_links > li#footer_pay_secure li a#pay_11 {
+  background-position: -470px 0;
+}
+.footer ul.footer_links > li#footer_pay_secure li a:hover {
+  opacity: 0.8;
+}
+footer {
+  width: 100%;
+  background: #f1f1f1;
+}
+footer .other_countries {
+  width: 980px;
+  margin: 0 auto;
+  border-top: 1px solid #CCCCCC;
+  padding: 5px 0;
+  text-align: center;
+  list-style: none;
+}
+footer .other_countries li {
+  display: inline-block;
+  line-height: 20px;
+  margin: 0 15px;
+}
+footer .other_countries li a {
+  text-decoration: none;
+}
+footer .other_countries li a img {
+  vertical-align: top;
+  margin-right: 5px;
+}
+footer .other_countries li a:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
+.spaceDiv {
+  clear: both;
+  height: 1px;
+  width: 1px;
+}
+.footer div,
+.footer p,
+.footer span,
+.footer a,
+.footer li,
+.footer strong {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+#cookie-overlay {
+  position: fixed;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  background-color: #383838;
+  z-index: 17000000;
+}
+#cookie-overlay .cookie-overlay-content {
+  width: 980px;
+  margin: auto;
+  position: relative;
+  padding: 10px 0;
+}
+#cookie-overlay p {
+  font-size: 11px;
+  color: #c3c3c3;
+  text-align: center;
+}
+#cookie-overlay p a {
+  text-decoration: underline;
+  color: inherit;
+}
+#cookie-overlay .picto-close {
+  position: absolute;
+  top: -12px;
+  right: -15px;
+  width: 20px;
+  height: 20px;
+  background: -webkit-linear-gradient(-45deg,transparent 0%,transparent 46%,white 46%,white 56%,transparent 56%,transparent 100%), -webkit-linear-gradient(45deg,transparent 0%,transparent 46%,white 46%,white 56%,transparent 56%,transparent 100%);
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 100%;
+  box-shadow: 0 0 0 2px white;
+  box-sizing: border-box;
+  cursor: pointer;
+}

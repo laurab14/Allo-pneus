@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html ng-app="qr" class="ng-scope"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+		<meta charset="UTF-8">
+		<style type="text/css">
+			body{
+	background: 0;
+	color: grey;
+}
+
+.backgroundTransparent{
+	background-color: transparent !important;
+}
+
+.backgroundWhite{
+	background-color: #FFF !important;
+}
+
+.asterix{
+	color: #F26021;
+}
+
+.ellipsis {
+	text-overflow: ellipsis;
+
+	/* Required for text-overflow to do anything */
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.greenButton{
+	background-color: #0288d1;
+	border-color: #0288d1;
+	color: #FFF;
+}
+
+.btn-greenButton{
+	background-color: #0288d1;
+	border-color: #0288d1;
+	color: #FFF;
+}
+
+.greenLabel{
+	color: #0288d1;
+}
+
+.greenButton:focus{
+	background-color: #0288d1;
+	border-color: #0288d1;
+	color: #FFF;
+}
+
+.greenButton:hover{
+	background-color: #0288d1;
+	border-color: #0288d1;
+	opacity: 0.7;
+	color: #FFF;
+}
+
+.greenButton:active{
+	background-color: #0288d1;
+	border-color: #0288d1;
+	opacity: 0.7;
+	color: #FFF;
+}
+
+.customButton{
+	background-color: #F26021;
+	border-color: #F26021;
+	color: #FFF;
+	border-radius: 0px !important;
+	font-size: 14px !important;
+	text-transform: uppercase;
+}
+
+.customAnswerButton{
+	background-color: #F26021;
+	border-color: #F26021;
+	color: #FFF;
+	border-radius: 0px !important;
+	font-size: 14px !important;
+}
+
+.btn-customButton{
+	background-color: #F26021;
+	border-color: #F26021;
+	color: #FFF;
+}
+
+.greenLabel{
+	color: #F26021;
+}
+
+.customButton:focus{
+	background-color: #F26021;
+	border-color: #F26021;
+	color: #FFF;
+}
+
+.customButton:hover{
+	background-color: #F26021;
+	border-color: #F26021;
+	color: #000;
+}
+
+.customButton:active{
+	background-color: #F26021;
+	border-color: #F26021;
+	opacity: 0.7;
+	color: #FFF;
+}
+
+.hideCustom{
+	display: none;
+}
+
+.breakWord{
+	word-break: break-all;
+}
+
+.centerText{
+	text-align: center;
+}
+
+
+.noBold{
+	font-weight: normal;
+}
+
+.grey{
+	color: grey;
+}
+
+.white{
+	color: #FFF;
+}
+
+.fullWidth{
+	width: 100%;
+}
+
+.formTitleDiv{
+	color: #F26021;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+.formTitleDivWithBand{
+	color: #FFF;
+	font-size: 18px;
+	line-height: 20px;
+	background-color: #F26021;
+	height: 40px;
+	line-height: 40px;
+	margin-left: -15px;
+	padding-left: 15px;
+	max-width: 260px;
+	border-radius: 5px;
+}
+
+.formTitleDivWithSmallBand{
+	color: #FFF;
+	font-size: 18px;
+	line-height: 20px;
+	background-color: #F26021;
+	height: 40px;
+	line-height: 40px;
+	margin-left: -15px;
+	padding-left: 15px;
+	max-width: 130px;
+	border-radius: 5px;
+}
+
+.formContainer{
+	border: 1px solid #dedede;
+	padding: 2%;
+}
+
+.questionFormContainer{
+	padding: 2%;
+}
+
+.dangerAlert{
+	color: #a94442;
+	background-color: #f2dede;
+}
+
+.greyBG{
+	background-color: #f3f3f3 !important;
+}
+
+.questionTextarea {
+	min-height: 127px;
+}
+
+
+.bandLogo{
+	color: #F26021 !important;
+	font-size: 50px !important;
+}
+
+.formLogo{
+	color: #F26021 !important;
+	font-size: 70px !important;
+}
+
+.question204 > .row{
+	margin-top: 100px; 
+	border: 0px !important;
+	-webkit-box-shadow: none !important; 
+	box-shadow: none !important; 
+}
+
+.answer204 > .row{
+	padding-top: 100px !important; 
+}
+
+.firstMessage, .lastMessage{
+	font-size: 20px;
+}
+
+.band204 h4 {
+	line-height: 20px !important;
+	font-size: 20px !important;
+}
+
+.questionFormContainer{
+	padding: 2% !important;
+	padding-top: 0 !important;
+}
+
+.separator{
+	width: 99% !important;
+	border-bottom: 1px #e2e2e2 solid;
+}
+
+.ctrlContainer{
+	display: none;
+}
+
+/*
+
+ ___ ___    ___  ___    ____   ____       ___   __ __    ___  ____   __ __ 
+|   |   |  /  _]|   \  |    | /    |     /   \ |  |  |  /  _]|    \ |  |  |
+| _   _ | /  [_ |    \  |  | |  o  |    |     ||  |  | /  [_ |  D  )|  |  |
+|  \_/  ||    _]|  D  | |  | |     |    |  Q  ||  |  ||    _]|    / |  ~  |
+|   |   ||   [_ |     | |  | |  _  |    |     ||  :  ||   [_ |    \ |___, |
+|   |   ||     ||     | |  | |  |  |    |     ||     ||     ||  .  \|     |
+|___|___||_____||_____||____||__|__|     \__,_| \__,_||_____||__|\_||____/ 
+																						
+
+ */
+
+
+@media(min-width:768px) {
+
+}
+
+@media(min-width: 992px){
+
+}
+
+@media(max-width:991px) {
+
+}
+
+@media(max-width:767px) {
+	
+	
+}		</style>
+		<link rel="stylesheet" href="d29377c9-7317-9a64-d162-9ba1fbbf5fcc_report_data_005/common.css">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="d29377c9-7317-9a64-d162-9ba1fbbf5fcc_report_data_005/bootstrap.css">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="d29377c9-7317-9a64-d162-9ba1fbbf5fcc_report_data_005/bootstrap-theme.css">
+		<link rel="stylesheet" href="d29377c9-7317-9a64-d162-9ba1fbbf5fcc_report_data_005/font-awesome.css">
+		<!-- Latest compiled and minified JavaScript -->
+		<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div ng-controller="QRCtrl" class="row ctrlContainer ng-scope" ng-show="ready" style="display: block;">
+				<!-- ngIf: demo -->
+				<div class="col-xs-12" ng-hide="result">
+					<form ng-submit="submitReport()" class="ng-pristine ng-valid ng-valid-email">
+						<div class="row">
+							<div class="col-xs-12 formContainer" ng-hide="step">
+								<div class="row">
+									<div class="col-xs-12 alert dangerAlert ng-binding ng-hide" ng-show="error">
+										
+									</div>
+									<div class="col-xs-12">
+										<div class="formTitle white"><h4><div class="formTitleDivWithBand ng-binding">Justifiez le signalement</div></h4></div>
+									</div>
+									<div class="col-xs-12">
+										<div class="row">
+											<div class="col-xs-12 col-sm-4">
+												<div class="row">
+													<div class="col-xs-12">
+														<label class="ng-binding">Prénom<span class="asterix">*</span></label>
+													</div>
+													<div class="col-xs-12 MgB10">
+														<input class="form-control greyBG ng-pristine ng-untouched ng-valid ng-empty" type="text" ng-model="firstName">
+													</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-4">
+												<div class="row">
+													<div class="col-xs-12">
+														<label class="ng-binding">Nom<span class="asterix">*</span></label>
+													</div>
+													<div class="col-xs-12 MgB10">
+														<input class="form-control greyBG ng-pristine ng-untouched ng-valid ng-empty" type="text" ng-model="lastName">
+													</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-4">
+												<div class="row">
+													<div class="col-xs-12">
+														<label class="ng-binding">E-mail<span class="asterix">*</span></label>
+													</div>
+													<div class="col-xs-12 MgB10">
+														<input class="form-control greyBG ng-pristine ng-untouched ng-valid ng-empty ng-valid-email" type="email" ng-model="email">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12">
+										<label class="ng-binding">Contenu de votre signalement<span class="asterix">*</span></label>
+									</div>
+									<div class="col-xs-12 MgB15">
+										<textarea class="form-control greyBG ng-pristine ng-untouched ng-valid ng-binding ng-empty" ng-model="text" rows="5"></textarea>
+									</div>
+									<div class="col-xs-12">
+										<button class="btn customAnswerButton fullWidth" ng-class="{disabled:disabled}" ng-disabled="disabled">
+											<b class="ng-binding">Publiez votre réponse</b>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-xs-12 band204 ng-hide" ng-show="result">
+					<div class="row">
+						<div class="col-xs-12">
+							<h4 class="ng-binding">
+								<div class="bandLogo">
+									<i class="fa fa-exclamation-circle"></i>
+								</div>
+								
+								<br>
+								
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<noscript>
+			<div class="col-xs-8 col-xs-offset-2 band204">
+				<div class="row">
+					<div class="col-xs-12">
+						<h4>
+							<div class="bandLogo">
+								<i class="fa fa-times"></i>
+							</div>
+							<div class="firstMessage">
+								This service require Javascript, please enable it
+							</div>
+						</h4>
+					</div>
+				</div>
+			</div>
+		</noscript>
+	
+	<footer>
+		<!-- Librairie AngularJS -->
+		<script type="text/javascript" src="d29377c9-7317-9a64-d162-9ba1fbbf5fcc_report_data_005/angular.js"></script>
+		<!-- controller utilisé -->
+		<script type="text/javascript">
+			var app = angular.module('qr' , []);
+
+app.controller('QRCtrl', function($scope, filterFilter, $http, $location) {
+
+	// paramètres de configuration
+	$scope.dev = false;
+	
+	// Textes
+	$scope.questionFormTitle = 'Interrogez notre communauté de clients ayant acheté ce pneumatique';
+	$scope.questionFormTitle2 = 'Afin de publier votre question, merci de renseigner vos informations ci-dessous.';
+	$scope.answerFormTitle = 'Répondre à la question';
+	$scope.historyTitle = 'Historique des échanges';
+	$scope.answerReplyFormTitle = 'Répondre';
+	$scope.signalFormTitle = 'Justifiez le signalement';
+	$scope.questionTitleLabel = 'Titre de votre question';
+	$scope.questionLabel = 'Contenu de votre question';
+	$scope.questionText1 = 'Ils seront notifiés de votre question et pourront vous répondre selon leur propre expérience.';
+	$scope.questionText2 = 'Exemple : Comment se comporte-t-il sur sol sec ? sous la pluie ? en ville ? est-il adapté aux monospaces ?... ';
+	$scope.questionText3 = 'Attention : Les questions relatives à la commande, au paiement, au délai, au stock, et aux opérations commerciales ne seront pas traitées. Merci de contacter le ';
+
+	$scope.requiredField = 'Champs obligatoires';
+	$scope.allopneuContact = 'service client Allopneus.com';
+	
+	$scope.answerLabel = 'Contenu de votre réponse';
+	$scope.signalLabel = 'Contenu de votre signalement';
+	$scope.submitButton = 'Envoyer';
+	$scope.publishAnswer = 'Publiez votre réponse';
+	$scope.emailLabel = 'Votre e-mail';
+	$scope.firstNameLabel = 'Votre Prénom';
+	$scope.lastNameLabel = 'Votre Nom';
+
+	$scope.answerEmailLabel = 'E-mail';
+	$scope.answerFirstNameLabel = 'Prénom';
+	$scope.answerLastNameLabel = 'Nom';
+
+	$scope.questionFirstMessageSuccess = 'Merci pour votre question !';
+	$scope.questionFirstMessageUpdated = 'Vous avez validé votre question !';
+	$scope.questionFirstMessageAlreadyUpdated = 'Vous avez déjà validé votre question';
+	$scope.questionLastMessageSuccess = 'Un e-mail de validation vient de vous être envoyé';
+
+	$scope.answerPublicFirstMessageSuccess = 'Merci pour votre Réponse !';
+	$scope.answerPublicFirstMessageUpdated = 'Vous avez validé votre réponse !';
+	$scope.answerPublicFirstMessageAlreadyUpdated = 'Vous avez déjà validé votre réponse';
+	$scope.answerPublicLastMessageSuccess = 'Un e-mail de validation vient de vous être envoyé';
+	$scope.alreayAnswered = 'Vous avez déjà répondu à la question';
+	$scope.answerReplyFirstMessageSuccess = "Merci pour votre réponse. Celle ci sera soumise à modération avant d'etre transmise. Vous serez averti d'un futur echange.";
+
+	$scope.reportFirstMessageSuccess = 'Merci pour votre signalement !';
+	$scope.reportFirstMessageUpdated = 'Votre signalement a été accepté';
+	$scope.reportFirstMessageAlreadyUpdated = 'Vous avez déjà validé votre signalement';
+	$scope.reportLastMessageSuccess = 'Un message de validation vous sera envoyé par email.';
+
+	$scope.firstMessageError = "Une erreur s'est produite, veuillez réessayer ultérieurement.";
+	$scope.missingInfoError = 'Veuillez remplir les champs obligatoires.';
+	$scope.globalError = "Une erreur s'est produite, veuillez réessayer ultérieurement.";
+	$scope.firstMessage = '';
+	$scope.lastMessage = '';
+	$scope.errorMessage = '';
+	
+	// Démo
+	$scope.demoTitle = 'Démo';
+	$scope.nextButton = 'Next / Prev / Init';
+	$scope.missingButton = 'Missings';
+	$scope.successSubmitButton = 'Success submit';
+	$scope.failSubmitButton = 'Fail submit';
+	$scope.successValidationButton = 'Success validation';
+	$scope.failValidationButton = 'Fail validation';
+
+	// paramètres des forms
+	$scope.firstName = '';
+	$scope.lastName = '';
+	$scope.email = '';
+	$scope.questionTitle = '';
+	$scope.questionContent = '';
+	$scope.authorName = '';
+	$scope.postDate = '';
+	$scope.stepCount = 0;
+	$scope.stepMax = 0;
+	
+	// paramètres masquant l'affichage des forms pour laisser place au texte de résultat
+	$scope.logo = 'fa fa-exclamation-circle';
+	$scope.step = false;
+	$scope.result = false;
+	$scope.error = false;
+	$scope.disabled = false;
+	$scope.ready = false;
+	$scope.mailOrg = false;
+	$scope.demo = false;
+	$scope.bandWidth = '';
+	$scope.bandCenter = 'col-xs-8 col-xs-offset-2';
+	$scope.bandFull = 'col-xs-12';
+
+	// Base commune aux trois iframes
+	$scope.idWebsite = '';
+	$scope.token = '';
+	$scope.type = 0;
+
+	// Question
+	$scope.productId = '';
+	
+	// Réponse
+	$scope.uuid = '';
+	$scope.questionUuid = '';
+	$scope.userId = '';
+	$scope.mailId = '';
+
+	// Echange
+	$scope.answerName = '';
+	$scope.answerContent = '';
+	$scope.answerDate = '';
+	$scope.origin = 0;
+	$scope.AR = [];
+
+	// Signalement
+	$scope.isQuestion = false;
+	$scope.isPublic = false;
+	$scope.id = 0;
+
+	// paramètres iframe. Pour chaque paramètre, on va s'assurer qu'il est définit et qu'il n'est pas vide
+	(function(){
+		var params = $location.search();
+
+		// Paramètres pour l'affichage
+		if(typeof params['mailOrg'] != 'undefined' && params['mailOrg'].length > 0 && params['mailOrg'] == 'true'){
+			$scope.mailOrg = true;
+			$scope.bandWidth = $scope.bandCenter;
+		}else{
+			$scope.mailOrg = false;
+			$scope.bandWidth = $scope.bandFull;
+		}
+
+		// Mode démo, désactive les submit/check etc... et gestion seulement par les boutons du bandeau de démo
+		if(typeof params['demo'] != 'undefined' && params['demo'].length > 0 && params['demo'] == 'true'){
+			$scope.demo = true;
+			handlerForm();
+			$scope.ready = true;
+			return true;
+		}else{
+			$scope.demo = false;
+		}
+
+		// le paramètre dev permet de changer l'url du flux et de l'api qr/amazon pour le localhost
+		if(typeof params['dev'] != 'undefined' && params['dev'].length > 0){
+			$scope.dev = true;
+			$scope.apiUrl = 'http://localqr.netreviews.eu/';
+		}else{
+			$scope.dev = false;
+			$scope.apiUrl = '//qr.netreviews.eu/';
+		}
+
+		// les trois paramètres obligatoires sont : idWebsite et le token, on vérifie dont s'ils sont définis et non vide
+		if(typeof params['idWebsite'] != 'undefined' && params['idWebsite'].length > 0 && typeof params['token'] != 'undefined' && params['token'].length > 0){
+			$scope.idWebsite = params['idWebsite'];
+			$scope.token = params['token'];
+			$scope.url = $scope.baseUrl;
+		}else{
+			$scope.idWebsite = '';
+			$scope.token = '';
+			displayFormResult(true, $scope.globalError);
+			return false;
+		}
+		handlerForm();
+	})();
+
+	$scope.submitQuestion = function(){
+		// Si on est en mode démo, on ne submit pas de form
+		if($scope.demo){
+			return false;
+		}
+
+		// On vérifie que les paramètres obligatoires pour une question ne soient pas vide (ceux qui ne sont pas vérifiés auparavant)
+		if(typeof $scope.productId == 'undefined' || $scope.productId.trim() == ''){
+			$scope.displayFormError();
+		}
+
+		// Deuxième partie de la vérification du formulaire.
+		if(!$scope.checkQuestion(2)){
+			return false;
+		}
+
+		// On récupère les valeurs à envoyer à l'API
+		var query = 'addQuestion';
+		var param = {
+			'idWebsite' : $scope.idWebsite,
+			'token' : $scope.token,
+			'query' : query,
+			'firstName' : $scope.firstName,
+			'lastName' : $scope.lastName,
+			'email' : $scope.email,
+			'title' : $scope.questionTitle,
+			'question' : $scope.questionContent,
+			'productId' : $scope.productId,
+			'category' : $scope.category,
+			'productPage' : $scope.productPage
+		}
+
+		// On effectue le post à l'API afin d'insérer la question. Si le post réussi, on retourne un texte dépendant du retour de l'API. S'il echoue on affiche un message d'erreur.
+		$http.post($scope.apiUrl+'apiForm.php', param).success(function(data){
+			
+			if(data.success == true){
+				displayFormResult(false, $scope.questionFirstMessageSuccess, $scope.questionLastMessageSuccess);
+			}else{
+				displayFormResult(true, $scope.firstMessageError);
+			}
+
+		}).error(function(data){
+			displayFormResult(true, $scope.firstMessageError);
+		});
+	};
+
+	$scope.submitAnswerPublic = function(){
+		// Si on est en mode démo, on ne submit pas de form
+		if($scope.demo){
+			return false;
+		}
+		
+		// On vérifie que les paramètres obligatoires pour une question ne soient pas vide (ceux qui ne sont pas vérifiés auparavant)
+		if(typeof $scope.uuid  == 'undefined' || $scope.uuid.trim() == ''){
+			return $scope.displayFormError();
+		}
+
+		// Deuxième partie de la vérification du formulaire.
+		if(!$scope.checkAnswerPublic()){
+			return false;
+		}else{
+			$scope.disabled = true;
+		}
+
+		// On récupère les valeurs à envoyer à l'API
+		var query = 'addPublicAnswer';
+		var param = {
+			'idWebsite' : $scope.idWebsite,
+			'token' : $scope.token,
+			'query' : query,
+			'uuid' : $scope.uuid,
+			'firstName' : $scope.firstName,
+			'lastName' : $scope.lastName,
+			'email' : $scope.email,
+			'text' : $scope.text
+		}
+
+		// On effectue le post à l'API afin d'insérer la réponse. Si le post réussi, on retourne un texte dépendant du retour de l'API. S'il echoue on affiche un message d'erreur.
+		$http.post($scope.apiUrl+'apiForm.php', param).success(function(data){
+			
+			if(data.success == true){
+				displayFormResult(false, $scope.questionFirstMessageSuccess, $scope.questionLastMessageSuccess);
+			}else{
+				displayFormResult(true, $scope.firstMessageError);
+			}
+
+		}).error(function(data){
+			// console.log(data);
+			displayFormResult(true, $scope.firstMessageError);
+		});
+	};
+
+	$scope.submitAnswer = function(){
+		// Si on est en mode démo, on ne submit pas de form
+		if($scope.demo){
+			return false;
+		}
+
+		// Deuxième partie de la vérification du formulaire.
+		if(!$scope.checkAnswer()){
+			$scope.displayFormError();
+			return false;
+		}else{
+			$scope.disabled = true;
+		}
+
+		// On récupère les valeurs à envoyer à l'API
+		var query = 'addAnswer';
+		var param = {
+			'idWebsite' : $scope.idWebsite,
+			'token' : $scope.token,
+			'query' : query,
+			'uuid' : $scope.userId,
+			'questionUuid' : $scope.questionUuid,
+			'mailId' : $scope.mailId,
+			'text' : $scope.text
+		}
+
+		// On effectue le post à l'API afin d'insérer la réponse. Si le post réussi, on retourne un texte dépendant du retour de l'API. S'il echoue on affiche un message d'erreur.
+		$http.post($scope.apiUrl+'apiForm.php', param).success(function(data){
+			
+			if(data.success == true){
+				displayFormResult(false, $scope.answerPublicFirstMessageSuccess);
+			}else{
+				displayFormResult(true, $scope.firstMessageError);
+			}
+
+		}).error(function(data){
+			// console.log(data);
+			displayFormResult(true, $scope.firstMessageError);
+		});
+	};
+
+	$scope.submitAnswerReply = function(){
+		// Si on est en mode démo, on ne submit pas de form
+		if($scope.demo){
+			return false;
+		}
+
+		// Deuxième partie de la vérification du formulaire.
+		if(!$scope.checkAnswer()){
+			$scope.displayFormError();
+			return false;
+		}else{
+			$scope.disabled = true;
+		}
+
+		// On récupère les valeurs à envoyer à l'API
+		var query = 'addAnswerReply';
+		var param = {
+			'idWebsite' : $scope.idWebsite,
+			'token' : $scope.token,
+			'query' : query,
+			'uuid' : $scope.uuid,
+			'origin' : $scope.origin,
+			'text' : $scope.text
+		}
+
+		// On effectue le post à l'API afin d'insérer la réponse. Si le post réussi, on retourne un texte dépendant du retour de l'API. S'il echoue on affiche un message d'erreur.
+		$http.post($scope.apiUrl+'apiForm.php', param).success(function(data){
+			if(data.success == true){
+				displayFormResult(false, $scope.answerReplyFirstMessageSuccess);
+			}else{
+				displayFormResult(true, $scope.firstMessageError);
+			}
+
+		}).error(function(data){
+			// console.log(data);
+			displayFormResult(true, $scope.firstMessageError);
+		});
+	};
+
+	$scope.submitReport = function(){
+		// Si on est en mode démo, on ne submit pas de form
+		if($scope.demo){
+			return false;
+		}
+		
+		// On vérifie que les paramètres obligatoires pour une question ne soient pas vide (ceux qui ne sont pas vérifiés auparavant)
+		if(typeof $scope.uuid  == 'undefined' || $scope.uuid.trim() == ''){
+			$scope.displayFormError();
+			return false;
+		}
+
+		// Deuxième partie de la vérification du formulaire.
+		if(!$scope.checkAnswerPublic()){
+			return false;
+		}
+
+		// On récupère les valeurs à envoyer à l'API
+		var query = 'addReport';
+		var param = {
+			'idWebsite' : $scope.idWebsite,
+			'token' : $scope.token,
+			'query' : query,
+			'uuid' : $scope.uuid,
+			'firstName' : $scope.firstName,
+			'lastName' : $scope.lastName,
+			'email' : $scope.email,
+			'text' : $scope.text
+		}
+
+		// On effectue le post à l'API afin d'insérer le signalement. Si le post réussi, on retourne un texte dépendant du retour de l'API. S'il echoue on affiche un message d'erreur.
+		$http.post($scope.apiUrl+'apiForm.php', param).success(function(data){
+			
+			if(data.success == true){
+				displayFormResult(false, $scope.reportFirstMessageSuccess, $scope.reportLastMessageSuccess);
+			}else{
+				displayFormResult(true, $scope.firstMessageError);
+			}
+		}).error(function(data){
+			displayFormResult(true, $scope.firstMessageError);
+		});
+	};
+
+	$scope.checkQuestion = function(){
+		// Si on est en mode démo, on ne submit pas de form
+		if($scope.demo){
+			return false;
+		}
+
+		$scope.error = false;
+
+		// On vérifie que les paramètres ne soient pas undefined sinon on les initialise à des chaines vides
+		if($scope.questionTitle == undefined){
+			$scope.questionTitle = '';
+		}
+
+		if($scope.questionContent == undefined){
+			$scope.questionContent = '';
+		}
+
+		if($scope.firstName == undefined){
+			$scope.firstName = '';
+		}
+
+		if($scope.lastName == undefined){
+			$scope.firstName = '';
+		}
+
+		if($scope.email == undefined){
+			$scope.email = '';
+		}
+
+		if($scope.stepCount == 1){
+			if($scope.questionTitle.trim() != '' && $scope.questionContent.trim() != ''){
+				
+				return $scope.next();
+
+			}else{
+
+				return $scope.displayFormError();
+
+			}
+		}else if($scope.stepCount == 2){
+			if($scope.firstName.trim() != '' && $scope.email.trim() != '' && validateEmail($scope.email)){
+				
+				return $scope.next();
+
+			}else{
+
+				return $scope.displayFormError();
+
+			}
+
+		}else{
+
+			return $scope.displayFormError();
+
+		}
+	};
+
+	$scope.checkAnswerPublic = function(){
+		// Si on est en mode démo, on ne submit pas de form
+		if($scope.demo){
+			return false;
+		}
+
+		$scope.error = false;
+
+		// On vérifie que les paramètres ne soient pas undefined sinon on les initialise à des chaines vides
+		if($scope.text == undefined){
+			$scope.text = '';
+		}
+
+		if($scope.firstName == undefined){
+			$scope.firstName = '';
+		}
+
+		if($scope.lastName == undefined){
+			$scope.lastName = '';
+		}
+
+		if($scope.email == undefined){
+			$scope.email = '';
+		}
+
+		if($scope.text.trim() == '' || $scope.firstName.trim() == '' || $scope.email.trim() == '' || !validateEmail($scope.email)){
+			
+			return $scope.displayFormError();
+
+		}else if($scope.text.trim() != '' && $scope.firstName.trim() != '' && $scope.email.trim() != '' && validateEmail($scope.email)){
+			
+			return $scope.next();
+
+		}else{
+
+			return $scope.displayFormError();
+
+		}
+	};
+
+	$scope.checkAnswer = function(){
+		// Si on est en mode démo, on ne submit pas de form
+		if($scope.demo){
+			return false;
+		}
+
+		$scope.error = false;
+
+		// On vérifie que les paramètres ne soient pas undefined sinon on les initialise à des chaines vides
+		if($scope.text == undefined){
+			$scope.text = '';
+		}
+
+		if($scope.text.trim() == ''){
+			return false;
+		}else{
+			return true;
+		}
+	};
+
+	$scope.displayFormError = function(){
+		if($scope.demo){
+			if($scope.error){
+				$scope.errorMessage = '';
+				$scope.error = false;
+			}else{
+				$scope.errorMessage = $scope.missingInfoError;
+				$scope.error = true;
+			}
+			return false;
+		}
+
+		$scope.errorMessage = $scope.missingInfoError;
+		$scope.error = true;
+		return false;
+	};
+
+	$scope.next = function(){
+		if($scope.demo){
+
+			if($scope.result){
+				$scope.result = false;
+				$scope.step = false;
+			}else if($scope.stepMax > 1){
+				$scope.step = !$scope.step;
+			}
+			return false;
+		}
+
+		if($scope.stepCount != 1 && $scope.stepCount != 2){
+			return false;
+		}
+
+		if($scope.stepCount == ($scope.stepMax - 1)){
+			$scope.step = true;
+			$scope.stepCount++;
+			return true;
+		}else if($scope.stepCount == $scope.stepMax){
+			$scope.disabled = true;
+			return true;
+		}else{
+			return false;
+		}
+	};
+
+	$scope.demoSubmit = function(success = false){
+		$scope.result = true;
+		if(success){
+			switch ($scope.type) {
+				case 1:
+					displayFormResult(false, $scope.questionFirstMessageSuccess, $scope.questionLastMessageSuccess);
+					break;
+				case 2:
+					displayFormResult(false, $scope.answerPublicFirstMessageSuccess, $scope.answerPublicLastMessageSuccess);
+					break;
+				case 3:
+					displayFormResult(false, $scope.reportFirstMessageSuccess, $scope.reportLastMessageSuccess);
+					break;
+				case 4:
+					displayFormResult(false, $scope.answerReplyFirstMessageSuccess);
+					break;
+				case 5:
+					displayFormResult(false, $scope.answerReplyFirstMessageSuccess);
+					break;
+				default:
+					displayFormResult(true, $scope.globalError);
+					break;
+			}
+		}else{
+			displayFormResult(true, $scope.firstMessageError);
+		}
+	}
+
+	$scope.demoValidate = function(success = false){
+		$scope.result = true;
+		
+		if(success){
+			switch ($scope.type) {
+				case 1:
+					if($scope.firstMessage == $scope.questionFirstMessageUpdated){
+						displayFormResult(false, $scope.questionFirstMessageAlreadyUpdated);
+					}else{
+						displayFormResult(false, $scope.questionFirstMessageUpdated);
+					}
+					break;
+				case 2:
+					if($scope.firstMessage == $scope.answerPublicFirstMessageUpdated){
+						displayFormResult(false, $scope.answerPublicFirstMessageAlreadyUpdated);
+					}else{
+						displayFormResult(false, $scope.answerPublicFirstMessageUpdated);
+					}
+					break;
+				case 3:
+					displayFormResult(false, $scope.reportFirstMessageAlreadyUpdated);
+				case 4:
+					displayFormResult(false, $scope.answerReplyFirstMessageSuccess);
+				case 5:
+					displayFormResult(false, $scope.answerReplyFirstMessageSuccess);
+					break;
+				default:
+					displayFormResult(true, $scope.globalError);
+					break;
+			}
+		}else{
+			displayFormResult(true, $scope.firstMessageError);
+		}
+	};
+
+	$scope.$watch($scope.ready, function(){
+		if($scope.ready){
+			document.getElementsByClassName('ctrlContainer')[0].style.display = 'block';
+		}
+	});
+
+	function loadAnswerData(){
+		if($scope.demo){
+			createDemoText();
+			return false;
+		}
+
+		var query = 'checkAnswer';
+		var param = {
+			'idWebsite' : $scope.idWebsite,
+			'token' : $scope.token,
+			'query' : query,
+			'questionUuid' : $scope.questionUuid,
+			'uuid' : $scope.userId,
+			'text' : $scope.text
+		}
+
+		// On effectue le post à l'API afin de récupérer les éléments d'answer/question. S'il echoue on affiche un message d'erreur.
+		$http.post($scope.apiUrl+'apiForm.php', param).success(function(data){
+			if(data['success'] === true){
+				if(data['message'] !== false){
+					$scope.authorName = data['message'].firstName;
+					$scope.questionTitle = data['message'].title;
+					$scope.questionContent = data['message'].question;
+					$scope.postDate = data['message'].createdAt.substring(0, 10);
+				}else{
+					displayFormResult(false, $scope.alreayAnswered);
+				}
+			}else{
+				return displayFormResult(true, $scope.globalError);
+			}
+		}).error(function(data){
+			return displayFormResult(true, $scope.globalError);
+		});
+	};
+
+	function loadAnswerReplyData(){
+		if($scope.demo){
+			createDemoText();
+			return false;
+		}
+
+		var query = 'loadAnswerReply';
+		var param = {
+			'idWebsite' : $scope.idWebsite,
+			'token' : $scope.token,
+			'query' : query,
+			'uuid' : $scope.uuid
+		}
+
+		// On effectue le post à l'API afin de récupérer les éléments d'answer/question. S'il echoue on affiche un message d'erreur.
+		$http.post($scope.apiUrl+'apiForm.php', param).success(function(data){
+			if(data['success'] === true){
+				if(data['message'] !== false){
+					$scope.authorName = data['message'].questionFirstName;
+					$scope.answerName = data['message'].answerFirstName;
+					$scope.questionTitle = data['message'].title;
+					$scope.questionContent = data['message'].question;
+					$scope.answerContent = data['message'].answerText;
+					$scope.postDate = data['message'].questionDate.substring(0, 10);
+					$scope.answerDate = data['message'].answerDate.substring(0, 10);
+					$scope.AR = data['message'].AR;
+				}else{
+					return displayFormResult(true, $scope.globalError);
+				}
+			}else{
+				return displayFormResult(true, $scope.globalError);
+			}
+		}).error(function(data){
+			return displayFormResult(true, $scope.globalError);
+		});
+	};
+
+	function checkElement(){
+		var query = 'checkElement';
+		var param = {
+			'idWebsite' : $scope.idWebsite,
+			'token' : $scope.token,
+			'query' : query,
+			'type' : $scope.type,
+			'uuid' : $scope.uuid,
+			'questionUuid' : $scope.questionUuid,
+			'id' : $scope.id
+		}
+
+		// On effectue le post à l'API afin d'insérer la question. Si le post réussi, on retourne un texte dépendant du retour de l'API. S'il echoue on affiche un message d'erreur.
+		$http.post($scope.apiUrl+'apiForm.php', param).success(function(data){
+			if(data.success == true){
+				if(data.message == 'OPERATION SUCCESSFULL'){
+					switch ($scope.type) {
+						case 1:
+							displayFormResult(false, $scope.questionFirstMessageUpdated);
+							break;
+						case 2:
+							displayFormResult(false, $scope.answerPublicFirstMessageUpdated);
+							break;
+						case 3:
+							displayFormResult(false, $scope.reportFirstMessageUpdated);
+							break;
+						default:
+							displayFormResult(true, $scope.globalError);
+							break;
+					}
+				}else if(data.message = 'ALREADY UPDATED'){
+					switch ($scope.type) {
+						case 1:
+							displayFormResult(false, $scope.questionFirstMessageAlreadyUpdated);
+							break;
+						case 2:
+							displayFormResult(false, $scope.answerPublicFirstMessageAlreadyUpdated);
+							break;
+						case 3:
+							displayFormResult(false, $scope.reportFirstMessageAlreadyUpdated);
+							break;
+						default:
+							displayFormResult(true, $scope.globalError);
+							break;
+					}
+				}else{
+					displayFormResult(true, $scope.globalError);
+				}
+			}else{
+				displayFormResult(true, $scope.firstMessageError);
+			}
+
+		}).error(function(data){
+			displayFormResult(true, $scope.firstMessageError);
+		});		 
+	};
+
+	function handlerForm(){
+		var params = $location.search();
+		var forms = {"question": 1, "answer_public" : 2, "report" : 3, "answer" : 4, "answer_reply" : 5};
+		var formHandler = '';
+		var url = location.href;
+		var formTest = false;
+
+		// Définition du form sur lequel on est.
+		for (var i in forms) {
+			formTest = url.match($scope.idWebsite+'_'+i+'.html');
+			if(formTest){
+				formHandler = i;
+				$scope.type = parseInt(forms[i]);
+			}
+		}
+
+		// Handler qui à pour rôle à partir du de l'url savoir quels sont les paramètres minimum requis.
+		switch (formHandler) {
+			case 'question':
+				if(!$scope.mailOrg || $scope.demo){
+					if(!$scope.demo){
+						// Chargement des paramètres obligatoires
+						if(typeof params['productId'] != 'undefined' && params['productId'].length > 0){
+							$scope.productId = params['productId'];
+						}else{
+							$scope.productId = '';
+							displayFormResult(true, $scope.globalError);
+						}
+					}
+
+					// Chargement des paramètres optionnels
+					if(typeof params['firstName'] != 'undefined' && params['firstName'].length > 0){
+						$scope.firstName = params['firstName'];
+					}else{
+						$scope.firstName = '';
+					}
+
+					if(typeof params['lastName'] != 'undefined' && params['lastName'].length > 0){
+						$scope.lastName = params['lastName'];
+					}else{
+						$scope.lastName = '';
+					}
+
+					if(typeof params['email'] != 'undefined' && params['email'].length > 0){
+						$scope.email = params['email'];
+					}else{
+						$scope.email = '';
+					}
+
+					if(typeof params['category'] != 'undefined' && params['category'].length > 0){
+						$scope.category = params['category'];
+					}else{
+						$scope.category = '';
+					}
+
+					if(typeof params['productPage'] != 'undefined' && params['productPage'].length > 0){
+						$scope.productPage = params['productPage'];
+					}else{
+						$scope.productPage = '';
+					}
+
+					$scope.stepMax = 2;
+					$scope.stepCount = 1;
+				}else{
+					if(typeof params['uuid'] != 'undefined' && params['uuid'].length > 0){
+						$scope.uuid = params['uuid'];
+					}else{
+						$scope.uuid = '';
+					}
+
+					checkElement();
+				}
+
+				break;
+			case 'answer':
+
+				if($scope.mailOrg || $scope.demo){
+
+					if($scope.mailOrg && !$scope.demo){
+						if(typeof params['questionUuid'] != 'undefined' && params['questionUuid'].length > 0){
+							$scope.questionUuid = params['questionUuid'];
+						}else{
+							$scope.questionUuid = '';
+							displayFormResult(true, $scope.globalError);
+							return false;
+						}
+
+						if(typeof params['uuid'] != 'undefined' && params['uuid'].length > 0){
+							$scope.userId = params['uuid'];
+						}else{
+							$scope.userId = '';
+							displayFormResult(true, $scope.globalError);
+							return false;
+						}
+
+						if(typeof params['mailId'] != 'undefined' && params['mailId'].length > 0){
+							$scope.mailId = params['mailId'];
+						}else{
+							$scope.mailId = '';
+							displayFormResult(true, $scope.globalError);
+							return false;
+						}
+					}
+
+					$scope.stepMax = 1;
+					$scope.stepCount = 1;
+					loadAnswerData();
+
+				}else{
+					return false;
+				}
+				
+
+				break;
+			case 'answer_public':
+				if(!$scope.mailOrg || $scope.demo){
+					if(!$scope.demo){
+						// Chargement des paramètres obligatoires
+						if(typeof params['uuid'] != 'undefined' && params['uuid'].length > 0){
+							$scope.uuid = params['uuid'];
+						}else{
+							$scope.uuid = '';
+							displayFormResult(true, $scope.globalError);
+							return false;
+						}
+					}
+
+					// Chargement des paramètres optionnels
+					if(typeof params['firstName'] != 'undefined' && params['firstName'].length > 0){
+						$scope.firstName = params['firstName'];
+					}else{
+						$scope.firstName = '';
+					}
+
+					if(typeof params['lastName'] != 'undefined' && params['lastName'].length > 0){
+						$scope.lastName = params['lastName'];
+					}else{
+						$scope.lastName = '';
+					}
+
+					if(typeof params['email'] != 'undefined' && params['email'].length > 0){
+						$scope.email = params['email'];
+					}else{
+						$scope.email = '';
+					}
+
+					$scope.stepMax = 1;
+					$scope.stepCount = 1;
+				}else{
+					if(typeof params['uuid'] != 'undefined' && params['uuid'].length > 0){
+						$scope.uuid = params['uuid'];
+					}else{
+						$scope.uuid = '';
+					}
+
+					if(typeof params['questionUuid'] != 'undefined' && params['questionUuid'].length > 0){
+						$scope.questionUuid = params['questionUuid'];
+					}else{
+						$scope.questionUuid = '';
+					}
+
+					checkElement();
+				}
+
+				break;
+			case 'answer_reply':
+				if($scope.mailOrg || $scope.demo){
+
+					if($scope.mailOrg && !$scope.demo){
+						if(typeof params['origin'] != 'undefined' && params['origin'].length > 0){
+							$scope.origin = params['origin'];
+						}else{
+							$scope.origin = '';
+							displayFormResult(true, $scope.globalError);
+							return false;
+						}
+
+						if(typeof params['uuid'] != 'undefined' && params['uuid'].length > 0){
+							$scope.uuid = params['uuid'];
+						}else{
+							$scope.uuid = '';
+							displayFormResult(true, $scope.globalError);
+							return false;
+						}
+					}
+
+					$scope.stepMax = 1;
+					$scope.stepCount = 1;
+					loadAnswerReplyData()
+
+				}else{
+					return false;
+				}
+
+				break;
+			case 'report':
+				if(!$scope.mailOrg || $scope.demo){
+					if(!$scope.demo){
+						// Chargement des paramètres obligatoires
+						if(typeof params['uuid'] != 'undefined' && params['uuid'].length > 0){
+							$scope.uuid = params['uuid'];
+						}else{
+							$scope.uuid = '';
+							displayFormResult(true, $scope.globalError);
+							return false;
+						}
+					}
+
+					// Chargement des paramètres optionnels
+					if(typeof params['firstName'] != 'undefined' && params['firstName'].length > 0){
+						$scope.firstName = params['firstName'];
+					}else{
+						$scope.firstName = '';
+					}
+
+					if(typeof params['lastName'] != 'undefined' && params['lastName'].length > 0){
+						$scope.lastName = params['lastName'];
+					}else{
+						$scope.lastName = '';
+					}
+
+					if(typeof params['email'] != 'undefined' && params['email'].length > 0){
+						$scope.email = params['email'];
+					}else{
+						$scope.email = '';
+					}
+
+					$scope.stepMax = 1;
+					$scope.stepCount = 1;
+				}else{
+					if(typeof params['id'] != 'undefined' && params['id'].length > 0){
+						$scope.id = params['id'];
+					}else{
+						$scope.id = 0;
+					}
+
+					checkElement();
+				}
+				break;
+			
+			default:
+				displayFormResult(true, $scope.globalError);
+				break;
+		}
+
+		$scope.ready = true;
+	}
+
+	function displayFormResult(error = false, firstMessage = '', lastMessage = ''){
+		$scope.firstMessage = '';
+		$scope.lastMessage = '';
+
+		if(error){
+			$scope.ready = true;
+			$scope.logo = 'fa fa-times'
+		}else{
+			$scope.logo = 'fa fa-check'
+		}
+
+		$scope.firstMessage = firstMessage;
+		$scope.lastMessage = lastMessage;
+		$scope.result = true;
+	}
+
+	function createDemoText(){
+		$scope.questionTitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae eros vulputate, pellentesque arcu dignissim, malesuada nibh ?';
+		$scope.questionContent = 'Suspendisse vestibulum lacus ut semper condimentum. In vel dui varius, varius neque vitae, accumsan est. Fusce ornare volutpat orci, ac luctus enim venenatis non. Fusce tempus dui vehicula, bibendum ligula sed, placerat sapien. Quisque iaculis quis est non tincidunt. Ut tempus sed dui a laoreet ?';
+		$scope.answerContent = 'Suspendisse vestibulum lacus ut semper condimentum. In vel dui varius, varius neque vitae, accumsan est. Fusce ornare volutpat orci, ac luctus enim venenatis non. Fusce tempus dui vehicula, bibendum ligula sed, placerat sapien. Quisque iaculis quis est non tincidunt. Ut tempus sed dui a laoreet ?';
+		$scope.authorName = 'Lorem';
+		$scope.answerName = 'Lorem';
+		var date = new Date();
+		$scope.postDate = date.getFullYear()+'-'+(date.getMonth()+1)+'-'+date.getDate();
+		$scope.answerDate = date.getFullYear()+'-'+(date.getMonth()+1)+'-'+date.getDate();
+		$scope.AR = [{
+			text: $scope.answerContent,
+			origin: 1,
+			firstName: 'Lorem 1',
+			createdAt: $scope.answerDate
+		},{
+			text: $scope.answerContent,
+			origin: 2,
+			firstName: 'Lorem 2',
+			createdAt: $scope.answerDate
+		},{
+			text: $scope.answerContent,
+			origin: 3,
+			firstName: 'Lorem 3',
+			createdAt: $scope.answerDate
+		}];
+	}
+
+	// Regex sur l'email afin de savoir s'il est valide
+	function validateEmail(email) {
+		var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		return re.test(email);
+	}
+
+});	
+
+// filtre pour les dates le format stocké en JSON n'est pas nativement reconnu :'(
+app.filter('dateFormat', function($filter) {
+	// Changer la date de format
+	var dateFormat = 'dd/MM/yyyy';
+
+	var angularDateFilter = $filter('date');
+	return function(input) {
+		return angularDateFilter(new Date(input),  dateFormat);
+	}
+});		</script>
+	</footer>
+</body></html>
