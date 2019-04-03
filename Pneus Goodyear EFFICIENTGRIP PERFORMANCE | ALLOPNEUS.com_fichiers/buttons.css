@@ -1,0 +1,358 @@
+@font-face {
+  font-family: 'buttons';
+  src: url('../../bundles/allopneusheaderfooter/fonts/buttons.eot?nfu810');
+  src: url('../../bundles/allopneusheaderfooter/fonts/buttons.eot?nfu810#iefix') format('embedded-opentype'), url('../../bundles/allopneusheaderfooter/fonts/buttons.ttf?nfu810') format('truetype'), url('../../bundles/allopneusheaderfooter/fonts/buttons.woff?nfu810') format('woff'), url('../../bundles/allopneusheaderfooter/fonts/buttons.svg?nfu810#buttons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icobtn-"],
+[class*=" icobtn-"] {
+  font-family: 'buttons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.btn_default {
+  display: inline-block;
+  border: none;
+  width: auto;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 8px 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.btn_default.btn_default-big {
+  width: 100%;
+  max-width: 330px;
+  line-height: 18px;
+  font-size: 15px;
+  padding: 16px 0;
+  margin: 10px 0 20px 0;
+}
+.btn_default.btn_default-big.btn_cart {
+  text-align: left;
+  line-height: 17px;
+  padding: 17px 0;
+}
+.btn_default.btn_default-big.btn_cart:before {
+  font-family: 'buttons';
+  content: "\e905";
+  font-size: 29px;
+  vertical-align: top;
+  padding: 0 20px 0 25px;
+  font-weight: normal;
+}
+.btn_default.btn_default-big.btn_wheel {
+  max-width: 220px;
+  margin: 10px 10px 5px 20px;
+  padding: 12px 30px 10px 30px;
+  white-space: normal;
+}
+.btn_default.btn_default-big[disabled] {
+  background-color: #999999 !important;
+}
+.btn_default.btn_default-big.disabled,
+.btn_default.btn_default-big.disabled:hover {
+  background-color: #666666;
+  color: #ccc;
+  cursor: initial;
+}
+.btn_default.btn_default-small {
+  display: block;
+  width: 70px;
+  font-size: 13px;
+  padding: 5px 0;
+  margin: 0 auto;
+}
+.btn_default.btn_listingWheel {
+  position: relative;
+  float: right;
+  width: 55px;
+  padding: 0;
+  font-size: 14px;
+  margin-left: 10px;
+  z-index: 12;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+.btn_default.btn_default-login {
+  width: 100%;
+  padding: 11px 0;
+  margin-bottom: 10px;
+  line-height: 14px;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.btn_default.btn_default-login.btn-facebook {
+  text-align: left;
+  color: #ffffff;
+  background-color: #4e82be;
+}
+.btn_default.btn_default-login.btn-facebook:before {
+  font-family: 'buttons';
+  content: "\e902";
+  font-size: 18px;
+  vertical-align: top;
+  padding: 0px 13px 0 15px;
+  font-weight: normal;
+}
+.btn_default.btn_default-login.btn-facebook:hover {
+  background-color: #5e92ce;
+}
+.btn_default.btn_searchStation {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  text-align: center;
+}
+.btn_default.btn_searchStation img {
+  display: inline-block;
+  width: 20px;
+  height: auto;
+  vertical-align: middle;
+}
+.btn_default.btn_geoloc {
+  height: 40px;
+  margin-left: 15px;
+  padding: 6px 25px 5px 20px;
+  font-weight: normal;
+  text-transform: none;
+  vertical-align: top;
+}
+.btn_default.btn_geoloc img {
+  display: inline-block;
+  width: 16px;
+  height: 26px;
+  vertical-align: top;
+}
+.btn_default.btn_geoloc span {
+  display: inline-block;
+  padding-left: 10px;
+  font-size: 15px;
+  line-height: 29px;
+  vertical-align: top;
+}
+.btn_default.btn_holiday {
+  line-height: 12px;
+  padding: 8px 15px 8px 10px;
+  cursor: default;
+}
+.btn_default.btn_holiday:before {
+  font-family: 'buttons';
+  content: "\e903";
+  font-size: 19px;
+  vertical-align: top;
+  padding-right: 10px;
+  font-weight: normal;
+}
+.btn_default.btn_holiday:hover {
+  background-color: #999999;
+}
+.btn_default.btn_search_geo {
+  padding: 10px 15px 10px 5px;
+  line-height: 12px;
+}
+.btn_default.btn_search_geo:before {
+  font-family: 'buttons';
+  content: "\e904";
+  font-size: 19px;
+  vertical-align: top;
+  padding: 0 10px;
+  font-weight: normal;
+}
+.btn_default:hover {
+  text-decoration: none;
+}
+.btn_default[disabled] {
+  background-color: #999999 !important;
+  cursor: initial;
+}
+.btn_buy {
+  display: block;
+  width: 100%;
+  max-width: 90px;
+  height: 25px;
+  padding: 6px 0;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: bold;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: left;
+  text-decoration: none;
+}
+.btn_buy:before {
+  font-family: 'buttons';
+  content: "\e905";
+  font-size: 17px;
+  vertical-align: top;
+  padding: 0 9px 0 8px;
+  font-weight: normal;
+}
+.btn_buy[disabled] {
+  background: #999999;
+  cursor: initial;
+}
+.btn_compare {
+  float: left;
+  width: auto;
+  height: 30px;
+  margin: 10px 0;
+  padding: 0 10px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+.btn_compare em {
+  font-style: normal;
+}
+.btn_compare--cancel {
+  float: left;
+  display: none;
+  width: 22px;
+  height: 23px;
+  padding: 0;
+  margin: 12px 5px 12px 6px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 22px;
+  border: solid 1px #9a9a9a;
+  text-align: center;
+  text-decoration: none;
+  color: #383838;
+  background: #ffffff;
+}
+.btn_compare--cancel:hover {
+  background-color: #dfdfe2;
+}
+.btn_form_search {
+  position: absolute;
+  display: block;
+  right: 16px;
+  bottom: 16px;
+  width: 170px;
+  margin: 0;
+  padding: 7px 10px 7px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 21px;
+  color: #fff;
+  text-align: left;
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+  box-sizing: content-box;
+}
+.btn_form_search.disabled,
+.btn_form_search.disabled:hover {
+  background-color: #666666;
+  color: #ccc;
+  cursor: initial;
+}
+.btn_form_search:before {
+  font-family: 'buttons';
+  content: "\e904";
+  font-size: 21px;
+  vertical-align: top;
+  padding: 0 13px;
+  font-weight: normal;
+}
+.btn-orange {
+  background-color: #ff6600;
+  color: #ffffff;
+}
+.btn-orange:hover {
+  background-color: #ff7800;
+}
+.btn-blue {
+  color: #ffffff;
+  background-color: #68bfd6;
+}
+.btn-blue:hover {
+  background-color: #73d3ec;
+}
+.btn-darkblue {
+  color: #ffffff;
+  background-color: #32364c;
+}
+.btn-darkblue:hover {
+  background-color: #424865;
+}
+.btn-lightgrey {
+  color: #383838 !important;
+  background-color: #ecedf0;
+}
+.btn-lightgrey:hover {
+  background-color: #dfdfe2;
+}
+.btn-grey {
+  color: #ffffff;
+  background-color: #999999;
+}
+.btn-grey:hover {
+  background-color: #a9a8a8;
+}
+.btn-black {
+  color: #ffffff;
+  background-color: #484848;
+}
+.btn-black:hover {
+  background-color: #616060;
+}
+.btn-uppercase {
+  text-transform: uppercase;
+}
+.btn-disabled {
+  background: #999999 !important;
+  cursor: initial;
+}
+.bloc_btn-center {
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'combo';
+  src: url('../../bundles/allopneusheaderfooter/fonts/combo.eot?ee2nao');
+  src: url('../../bundles/allopneusheaderfooter/fonts/combo.eot?ee2nao#iefix') format('embedded-opentype'), url('../../bundles/allopneusheaderfooter/fonts/combo.ttf?ee2nao') format('truetype'), url('../../bundles/allopneusheaderfooter/fonts/combo.woff?ee2nao') format('woff'), url('../../bundles/allopneusheaderfooter/fonts/combo.svg?ee2nao#combo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icocombo-"],
+[class*=" icocombo-"] {
+  font-family: 'combo' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icocombo-4seasons:before {
+  content: "\e900";
+}
+.icocombo-infos:before {
+  content: "\e906";
+}
+.icocombo-summer:before {
+  content: "\e90b";
+}
+.icocombo-winter:before {
+  content: "\e90d";
+}

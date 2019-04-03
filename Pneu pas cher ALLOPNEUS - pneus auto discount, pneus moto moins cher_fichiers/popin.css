@@ -1,0 +1,62 @@
+#redirectionModal {
+  top: 150px;
+  max-width: 600px;
+  z-index: 5000;
+  padding: 0;
+  background: #ffffff;
+  border-radius: 0;
+}
+#redirectionModal #modalHeader_close {
+  display: block;
+  height: 35px;
+  font-size: 17px;
+  line-height: 35px;
+  text-align: right;
+  background: #ededed;
+  cursor: pointer;
+}
+#redirectionModal #modalHeader_close #modalBtn_close {
+  position: relative;
+  float: right;
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 35px;
+  text-align: center;
+  text-decoration: none;
+  background: #000;
+}
+#redirectionModal .modal_content {
+  padding: 25px 50px;
+}
+#redirectionModal .modal_content p {
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+}
+#redirectionModal .modal_content .modal_boutons {
+  margin: 10px 0 5px 0;
+  padding: 20px 5px 10px 5px;
+}
+#redirectionModal .modal_content .modal_boutons a {
+  font-size: 12px;
+  padding: 7px 20px;
+}
+#redirectionModal .modal_content .modal_boutons a.modal_bouton_left {
+  margin-right: 15px;
+}
+#redirectionModal + .reveal-modal-bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 2000;
+}

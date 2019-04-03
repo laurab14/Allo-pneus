@@ -1,0 +1,17 @@
+.autocomplete_row {
+    color: black;
+    text-transform: uppercase;
+}
+
+.autocomplete_row span {
+    color: grey;
+    font-size: 0.8em;
+    text-transform: none;
+}
+
+.autocomplete_row b {
+    text-transform: uppercase;
+}
+.ui-menu-item.ui-state-focus {
+    font-weight: normal;
+}
