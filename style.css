@@ -1,13 +1,19 @@
+/* Menu Espace*/
+#EspacePro {
+  color: white;
+  padding: 5px;
+  font-size: 0.8em;
+  border: none;
+  background-color: #424242;
+}
+
+#EspacePro:hover {
+  background-color: #ff6600;
+}
+
 /* Dropdown Formulaire */
 .DropButton1 {
   background-color: :##424242;
-  color: white;
-  padding: 5px;
-  font-size: 1em;
-  border: none;
-}
-
-#EspacePro {
   color: white;
   padding: 5px;
   font-size: 1em;
@@ -26,7 +32,7 @@
   background-color: black;
   color: white;
   padding: 5px;
-  font-size: 1em;
+  font-size: 0.8em;
   border: none;
 }
 
@@ -71,6 +77,10 @@
   color: #FFFFFF;
 }
 
+#HorizontalLine {}
+
+/* Fin  menu espace*/
+/*Bloc Banner*/
 #baseline {
   font-size: 0.5em;
 }
@@ -82,7 +92,6 @@
   border-radius: 0.5px;
 }
 
-/* Bloc Header*/
 #HomeBanner {
   width: 30vw;
 }
@@ -91,8 +100,14 @@
   width: 12vw;
 }
 
+#PanierImg {
+  width: 15vw;
+  margin-right: 5vw;
+}
+
 #Panier1 {
-  font-size: 0.8em
+  font-size: 0.8em;
+  color: #ff6600;
 }
 
 #Panier2 {
@@ -100,33 +115,59 @@
   color: #ff6600;
 }
 
+/*Fin Bloc Banner*/
+/* Menu 1 header */
 #Menu1 {
   Font-size: 0.7em;
 }
-
-
 
 .nav-item .nav-link {
   padding: 0;
 }
 
-.nav-item:hover {
-  background-color: #303030;
+#EmptyBlock .navbar-nav #JantesTitle:hover {
+  background-color: #4e4e4e;
 }
 
+#EmptyBlock .navbar-nav #PromoTitle:hover {
+  background-color: #af0303;
+}
 
+#EmptyBlock .navbar-nav #HiverTitle:hover {
+  background-color: #20809e;
+}
+
+#EmptyBlock .navbar-nav #PneuMotoTitle:hover {
+  background-color: #5e840c;
+}
+
+#EmptyBlock .navbar-nav #PneuQuadTitle:hover {
+  background-color: #2f5408;
+}
+
+#EmptyBlock .navbar-nav #PneuAgricoleTitle:hover {
+  background-color: #5c3702;
+}
+
+#EmptyBlock .navbar-nav #PneuPoidsLourdsTitle:hover {
+  background-color: #7d1d07;
+}
 
 .MenuTire {
   background: #909090;
 }
 
-#EmptyBlock>nav-link a:hover {
-  background-color: #D3D3D3;
-}
-
 #PneuAutoTitle {
   background-color: #0c3759;
   color: #FFFFFF;
+}
+
+#PneuMotoTitle {
+  background-color: #909090;
+}
+
+#PneuQuadTitle {
+  background-color: #909090;
 }
 
 #PromoTitle {
@@ -140,18 +181,29 @@
 #MontageTitle {
   background-color: #156391;
 }
+
 #EmptyBlock {
   background-color: #156391;
 }
+
+/*  Fin Menu 1 header */
+/* Menu 2 header */
+#Menu2 .navbar-nav .nav-item:hover {
+  background-color: #156391;
+}
+
 #Menu2 {
   Font-size: 0.8em;
   background-color: #0c3759;
 }
 
+/* Fin Menu 2 header */
+/* Menu 3 Vertical header */
 #MenuVertical {
   background-color: #156391;
   margin: 0;
   float: left;
+  font-size: 0.8em;
 }
 
 .BoldSearch {
@@ -172,7 +224,7 @@
   background-color: #1d8ec8;
 }
 
-#v-pills-profile-tab:hover{
+#v-pills-profile-tab:hover {
   background-color: #1d8ec8;
 }
 
@@ -193,14 +245,64 @@
   margin: 0;
 }
 
+/* Fin Menu 3 header */
+/*Content Menu 3*/
 #v-pills-home {
   font-size: 0.7em;
   color: #FFFFFF
 }
 
-.LogoPneu{
+#ToolSearch {
+  height: 4vh;
+}
+
+#ToolSearchButton {
+  background-color: #ff6600;
+  border-color: 1px solid #ff6600;
+  color: white;
+}
+
+.AutoSearch {
+  font-size: 0.7em;
+  color: white;
+}
+
+.LogoPneu {
   width: 8vw;
 }
+
 select {
   width: 5vw;
+}
+
+/* Fin Content Menu 3*/
+@media (max-width: 990px) {
+  #HomeBanner {
+    width: 30vw;
+  }
+
+  #ContactBanner {
+    width: 12vw;
+  }
+
+  #PanierImg {
+    width: 30vw;
+    margin-right: 5vw;
+  }
+}
+
+@media (max-width: 360px) {
+
+  /*Bloc Banner*/
+  #HomeBanner {
+    width: 50vw;
+  }
+
+  #ContactBanner {
+    width: 12vw;
+  }
+
+  #PanierImg {
+    width: 50vw;
+  }
 }
